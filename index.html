@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Extension</title>
-    <link rel="stylesheet" href="popup.css">
-    <script src="index.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Extension</title>
+        <link rel="stylesheet" href="popup.css">
+    </head>
 <span id='close'>X</span>
 <body>
     <div class = "heading">
     <div id = "title"><h2>Cover Letter Generator</h2></div>
-    <div id = "form">
-         <form>
-            <h3>Name:</h3>
-             <input id= "nameInput" type="text" name="name">
+    <div >
+         <form id = "form">
+            <!-- <h3>Name:</h3>
+            <input id= "nameInput" type="text" name="name" placeholder="Username">
+            <input type="submit" id="submit_btn" value="Submit">
+         <br> -->
+         <div id="resumeElement"></div>
          <br>
-             <h3>Experience:</h3>
+             <h3>Add Experience:</h3>
+             <h4>Title:</h4>
+             <textarea id = "title_name" name="title" ></textarea>
+             <h4>Experience:</h4>
              <textarea id = "experienceInput" name="paragraph_text" cols="50" rows="10"></textarea>
+             <input type="submit" id="add_exp" value="Add">
+
         <br>
         <br>
         </form>
     </div>
-    <div class = "heading" >
+    <!-- <div class = "heading" id="login">
         <button id="generateButton">Generate</button>
+    </div> -->
     </div>
-    </div>
+    
+    <script src="index.js"></script>
 </body>
 </html>
