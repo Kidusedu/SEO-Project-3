@@ -4,7 +4,10 @@
     "description": "This is an extension to generate a cover letter based on work experience and job description.",
     "manifest_version": 3,
     "author": "Harsh Gandhi",
-    "permissions": ["activeTab", "scripting", "tabs"],
+    "permissions": ["storage", "activeTab", "scripting", "tabs", "tabGroups","declarativeContent"],
+    "background": {
+        "service_worker": "background.js"
+      },
     "host_permissions": [
         "*://*/*"
       ],
