@@ -53,6 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         const resumeElement = document.getElementById("resumeElement");
         resumeElement.textContent = resumeData;
+        for(x = 1; x<resumeData.length; x++){
+          resumeElement.innerHTML += "<li><a href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwit4_fI1aeAAxXRlmoFHes5DQcQPAgJ'>"+resumeData[x]+"</a></li>";
+          console.log(x);
+        }
       }
     })
       // Redirect the popup to index.html
@@ -112,6 +116,10 @@ document.addEventListener("DOMContentLoaded", function() {
           } else {
             const resumeElement = document.getElementById("resumeElement");
             resumeElement.textContent = resumeData;
+            for(x = 1; x<resumeData.length; x++){
+              resumeElement.innerHTML += "<li><a href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwit4_fI1aeAAxXRlmoFHes5DQcQPAgJ'>"+resumeData[x]+"</a></li>";
+              console.log(x);
+            }
           }
 
          
