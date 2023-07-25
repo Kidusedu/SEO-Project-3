@@ -63,3 +63,15 @@ button:active{
     background:#ccc;
     color:#fff;
 }
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+#submit-file{
+    margin-top:30px;
+}
+
+#submit{
+    text-align: center;
+}
